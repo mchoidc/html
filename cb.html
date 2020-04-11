@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Checkerboard</title>
+	<style type="text/css">
+	div.container{
+		margin: 20px auto;
+		width: 940px;
+		border:1px solid black;
+		padding: 10px;
+		min-height: 800px;
+	}
+	div.board_row{
+	}
+	div.board_row div{
+		width:15px;
+		height:15px;
+		display:inline-block;
+		border:1px solid black;
+		line-height:0px;
+	}
+	div.board_row .white{
+		background-color:white;
+	}
+
+	div.board_row .black{
+		background-color:black;
+	}
+
+	h3{
+		margin:5px 0px;
+		padding:0px;
+	}
+
+	div#area{
+		background-color: silver;
+		width:100%;
+		height:500px;
+	}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<h3>Instruction</h3>
+		To create a 4x2 checkerboard, have your html be in the following format:
+
+<pre>&lt;div class='board_row'&gt;
+   &lt;div class=&quot;white&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;white&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class='board_row'&gt;
+   &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;white&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;black&quot;&gt;&lt;/div&gt;
+   &lt;div class=&quot;white&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+		<p>This will show a checkerboard that looks like this:</p>
+		<div class='board_row'>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+		</div>
+		<div class='board_row'>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+		</div>
+		<p>Do not worry about the spacing between the boxes.</p>
+
+		<h3>#area (this grey box is a division with an ID of area)</h3>
+		<div id='area'></div>
+	</div>
+
+</body>
+</html>
